@@ -15,3 +15,4 @@ public class ArrayTest {
         System.out.printf("random20WordsArray = %s%n", Arrays.toString(random20WordsArray));
     }
 }
+    
