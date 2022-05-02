@@ -15,8 +15,7 @@ public class ArrayTest {
         String[] random20WordsArray = random20WordsList.toArray(new String[20]);
         System.out.printf("random20WordsArray = %s%n", Arrays.toString(random20WordsArray));
     }
-
-    private class BubbleSort {
+    
         public static void bubbleSort() {
 
          String str[] = {"Lorem" , "Ipsum" , "Dolor" , "Sit" , "Etiam" ,  "Amet" , "Consectetur", "Adipiscing" , "Elit" , "Integer",  "Auctor", "Purus", "Nec" , "Congue", "Dolor" , "Tellus" , "Scelerisque" , "Mongo", "Nam", "Diam"};
@@ -33,8 +32,10 @@ public class ArrayTest {
              }
             }
              System.out.println(str[j]);
-         }
+            }            
         }
-     }
-}
+    }
+
+
+
 
