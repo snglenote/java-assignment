@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+
 public class ArrayTest {
     public static void main(String[] args) throws IOException {
         List<String> wordsList = Files.readAllLines(Paths.get("100.txt"));
@@ -16,7 +17,7 @@ public class ArrayTest {
     }
 
     private class BubbleSort {
-        public static void bubbleSort(String []args) {
+        public static void bubbleSort() {
 
          String str[] = {"Lorem" , "Ipsum" , "Dolor" , "Sit" , "Etiam" ,  "Amet" , "Consectetur", "Adipiscing" , "Elit" , "Integer",  "Auctor", "Purus", "Nec" , "Congue", "Dolor" , "Tellus" , "Scelerisque" , "Mongo", "Nam", "Diam"};
 
