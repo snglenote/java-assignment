@@ -1,30 +1,22 @@
 public class BubbleSort {
-    
-        public static void bubbleSort(int [] sort_arr, int len){
-            
-            for (int i=0;i<len-1;++i){
-    
-                for(int j=0;j<len-i-1; ++j){
-    
-                    if(sort_arr[j+1]<sort_arr[j]){
-    
-                        int swap = sort_arr[j];
-                        sort_arr[j] = sort_arr[j+1];
-                        sort_arr[j+1] = swap;
-    
-                    }
-                }
-            }
-        }
-        
-        public static void main( String args[] ) {
-            int [] array = {10,5,3,1,24,12};
-            int len = array.length;
-            bubbleSort(array,len);
-    
-            for(int i = 0; i<len; ++i){
-                System.out.print(array[i] + " ");
-            }
-        }
-    }
+    public static void main(String []args) {
+     String str[] = {"Lorem" , "Ipsum" , "Dolor" , "Sit" , "Etiam" ,  "Amet" , "Consectetur", "Adipiscing" , "Elit" , "Integer",  "Auctor", "Purus", "Nec" , "Congue", "Dolor" , "Tellus" , "Scelerisque" , "Mongo", "Nam", "Diam"};
+     
+     
+     String temp;
 
+        System.out.println("Strings in sorted order:");
+            for (int j = 0; j < str.length; j++) {
+                for (int i = j + 1; i < str.length; i++) {
+
+                // comparing adjacent strings
+                if (str[i].compareTo(str[j]) < 0) {
+             temp = str[j];
+             str[j] = str[i];
+             str[i] = temp;
+         }
+        }
+        System.out.println(str[j]);
+     }
+    }
+ }
