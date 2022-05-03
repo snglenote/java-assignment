@@ -1,8 +1,8 @@
 import java.io.FileWriter;
-import java.io.PrintStream;
+import java.io.IOException;
 
 public class BubbleSort {
-    public static void main(String []args) {
+    public static void main(String []args) throws IOException {
     String str[] = {"Lorem" , "Ipsum" , "Dolor" , "Sit" , "Etiam" ,  "Amet" , "Consectetur", "Adipiscing" , "Elit" , "Integer",  "Auctor", "Purus", "Nec" , "Congue", "Dolor" , "Tellus" , "Scelerisque" , "Mongo", "Nam", "Diam"};
      
      
@@ -21,12 +21,12 @@ public class BubbleSort {
         }
         System.out.println(str[j]);
         }
-        FileWriter writer = new FileWriter("Sorted.txt");
-        for(String cur: rows)
-            writer.write(cur+"\n");
-    
-        PrintStream reader;
-        reader.close();
-        writer.close();
+        try (FileWriter writer = new FileWriter("BubbleSortResults")) {
+            for(String s: str){
+                writer.write(s);
+                writer.write("\r\n");
+                           
+}
+        }
     }
 }
