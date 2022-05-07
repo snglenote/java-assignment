@@ -7,6 +7,5 @@ Current implementation:
 -Removed SaveToFile.java
 -Removed sorted.txt
 
-
 Read: Searching results of a bubble sort
 Practice: Creating gui using javafx and scenebuilder
