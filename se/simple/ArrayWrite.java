@@ -28,16 +28,6 @@ public class ArrayWrite {
 
         System.out.println(words.size());
 
-        //3. Randomizing to pick up a word from arraylist
-        Random rand = new Random();
-        int randomNumber = rand.nextInt(words.size() - 1) + 1;
-
-        System.out.println(randomNumber);
-
-        //4. Prints the randomly selected word. 
-        String word = words.get(randomNumber);
-        System.out.println(word);
-
         
     }
 }
