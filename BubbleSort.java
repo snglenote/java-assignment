@@ -2,7 +2,16 @@ import java.io.FileWriter;
 import java.io.IOException;
 import org.apache.commons.lang.ArrayUtils;
 
+
 public class BubbleSort {
+
+    public static void execute(String[] strings, String searchString) {
+        if (ArrayUtils.contains(strings, searchString)) {
+            System.out.println("contains.");
+        } else {
+            System.out.println("does not contain.");
+        }
+    }
     public static void main(String []args) throws IOException {
     String str[] = {"Lorem" , "Ipsum" , "Dolor" , "Sit" , "Etiam" ,  "Amet" , "Consectetur", "Adipiscing" , "Elit" , "Integer",  "Auctor", "Purus", "Nec" , "Congue", "Dolor" , "Tellus" , "Scelerisque" , "Mongo", "Nam", "Diam"};
      
