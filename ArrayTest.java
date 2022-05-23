@@ -6,6 +6,7 @@ import java.util.Collections;
 import java.util.List;
 
 
+
 public class ArrayTest {
     public static void main(String[] args) throws IOException {
         List<String> wordsList = Files.readAllLines(Paths.get("100.txt"));
@@ -15,6 +16,8 @@ public class ArrayTest {
         String[] random20WordsArray = random20WordsList.toArray(new String[20]);
         System.out.printf("random20WordsArray = %s%n", Arrays.toString(random20WordsArray));
     }
+  
+    static long startTime = System.currentTimeMillis();
     
         public static void bubbleSort() {
 
@@ -30,8 +33,15 @@ public class ArrayTest {
                  str[j] = str[i];
                  str[i] = temp;
              }
+             
+             long endTime = System.currentTimeMillis();
+
+             System.out.println("That took " + (endTime - startTime) + " milliseconds");
+             
             }
              System.out.println(str[j]);
+
+            
             }            
         }
     }
