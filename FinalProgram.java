@@ -8,10 +8,8 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 import java.io.FileWriter;
-import java.io.IOException;
-import java.util.Arrays;
    
-public class Final { 
+public class FinalProgram { 
 
     static long startTime = System.nanoTime();
     public static void counter(String[] args) throws Exception {  
