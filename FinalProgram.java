@@ -33,7 +33,7 @@ public class FinalProgram {
 
         long endTime = System.nanoTime();
 
-        long duration = (endTime - Counter.startTime);
+        long duration = (endTime - startTime);
         
         System.out.println("The time it took to count words was: " + duration/1000000 + "ms");
     }  
@@ -43,7 +43,7 @@ public class FinalProgram {
         List<String> wordsList = Files.readAllLines(Paths.get("100.txt"));
         Collections.shuffle(wordsList);
         List<String> random20WordsList = wordsList.subList(0, 19);
-        System.out.printf("random20WordsList = %s%n", random20WordsList);
+        System.out.printf("\r\nrandom20WordsList = %s%n", random20WordsList);
         String[] random20WordsArray = random20WordsList.toArray(new String[20]);
         System.out.printf("random20WordsArray = %s%n", Arrays.toString(random20WordsArray));
     }
@@ -54,7 +54,7 @@ public class FinalProgram {
             String str[] = {"Lorem" , "Ipsum" , "Dolor" , "Sit" , "Etiam" ,  "Amet" , "Consectetur", "Adipiscing" , "Elit" , "Integer",  "Auctor", "Purus", "Nec" , "Congue", "Dolor" , "Tellus" , "Scelerisque" , "Mongo", "Nam", "Diam"};
 
             String temp;
-               System.out.println("Strings in sorted order:");
+               System.out.println("\r\nStrings in sorted order:");
                    for (int j = 0; j < str.length; j++) {
                    for (int i = j + 1; i < str.length; i++) {
                        
@@ -84,7 +84,7 @@ public class FinalProgram {
 
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Enter the word you would like to search: ");
+        System.out.print("\r\nEnter the word you would like to search: ");
 
         String word = input.nextLine();
 
