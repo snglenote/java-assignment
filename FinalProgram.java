@@ -51,7 +51,7 @@ public class FinalProgram {
 
 
         public static void bubbleSort(String []args) throws IOException {
-            String str[] = {"Lorem" , "Ipsum" , "Dolor" , "Sit" , "Etiam" ,  "Amet" , "Consectetur", "Adipiscing" , "Elit" , "Integer",  "Auctor", "Purus", "Nec" , "Congue", "Dolor" , "Tellus" , "Scelerisque" , "Mongo", "Nam", "Diam"};
+            String str[] = {};
 
             String temp;
                System.out.println("\r\nStrings in sorted order:");
@@ -94,7 +94,7 @@ public class FinalProgram {
 
         String textInput = word;
             int index = 0;
-        String[] yourArray = {"Lorem" , "Ipsum" , "Dolor" , "Sit" , "Etiam" ,  "Amet" , "Consectetur", "Adipiscing" , "Elit" , "Integer",  "Auctor", "Purus", "Nec" , "Congue", "Dolor" , "Tellus" , "Scelerisque" , "Mongo", "Nam", "Diam"};
+        String[] yourArray = {"Father" , "Head" , "Stand" , "Own" , "Page" ,  "Should" , "Country", "Found" , "Answer" , "School",  "Grow", "Study", "Still" , "Learn", "Plant" , "Cover" , "Food" , "Sun", "Four", "Between"};
 
         for (int i = 0; i <= yourArray.length - 1; i++) {
 

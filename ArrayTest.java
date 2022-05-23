@@ -16,8 +16,8 @@ public class ArrayTest {
         String[] random20WordsArray = random20WordsList.toArray(new String[20]);
         System.out.printf("\r\nrandom20WordsArray = %s%n", Arrays.toString(random20WordsArray));
     }
-  
- }
+}
+ 
 
 
 

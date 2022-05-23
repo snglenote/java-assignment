@@ -3,15 +3,15 @@ import java.util.Scanner;
 public class Search {
     public static void search(String[] args){
 
-    boolean flag = false;
+        boolean flag = false;
 
-   Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
-   System.out.print("Enter the word you would like to search: ");
+        System.out.print("Enter the word you would like to search: ");
 
-   String word = input.nextLine();
+        String word = input.nextLine();
 
-   input.close(); 
+        input.close(); 
 
   
 
