@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Search {
-    public static void search(String[] args){
+    public static void main(String[] args){
 
         boolean flag = false;
 
