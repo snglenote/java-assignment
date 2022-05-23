@@ -1,43 +1,30 @@
-import java.io.FileWriter;
-import java.io.IOException;
-import org.apache.commons.lang.ArrayUtils;
 
-
-public class BubbleSort {
-
-    public static void execute(String[] strings, String searchString) {
-        if (ArrayUtils.contains(strings, searchString)) {
-            System.out.println("contains.");
-        } else {
-            System.out.println("does not contain.");
-        }
-    }
-    public static void main(String []args) throws IOException {
-    String str[] = {"Lorem" , "Ipsum" , "Dolor" , "Sit" , "Etiam" ,  "Amet" , "Consectetur", "Adipiscing" , "Elit" , "Integer",  "Auctor", "Purus", "Nec" , "Congue", "Dolor" , "Tellus" , "Scelerisque" , "Mongo", "Nam", "Diam"};
-     
-     
-     String temp;
-
-        System.out.println("Strings in sorted order:");
-            for (int j = 0; j < str.length; j++) {
-                for (int i = j + 1; i < str.length; i++) {
-
-                // comparing adjacent strings
-                if (str[i].compareTo(str[j]) < 0) {
-             temp = str[j];
-             str[j] = str[i];
-             str[i] = temp;
+ import java.io.IOException;
+ import java.nio.file.Files;
+ import java.nio.file.Paths;
+ import java.util.Arrays;
+ import java.util.Collections;
+ import java.util.List;
+ 
+ 
+     public class BubbleSort {
+         public static void main(String []args) {
+ 
+          String str[] = {"Lorem" , "Ipsum" , "Dolor" , "Sit" , "Etiam" ,  "Amet" , "Consectetur", "Adipiscing" , "Elit" , "Integer",  "Auctor", "Purus", "Nec" , "Congue", "Dolor" , "Tellus" , "Scelerisque" , "Mongo", "Nam", "Diam"};
+ 
+          String temp;
+             System.out.println("Strings in sorted order:");
+                 for (int j = 0; j < str.length; j++) {
+                 for (int i = j + 1; i < str.length; i++) {
+                     
+                 if (str[i].compareTo(str[j]) < 0) {
+                  temp = str[j];
+                  str[j] = str[i];
+                  str[i] = temp;
+              }
+             }
+              System.out.println(str[j]);
+          }
          }
-        }
-        System.out.println(str[j]);
-        }
-        try (FileWriter writer = new FileWriter("BubbleSortResults")) {
-            for(String s: str){
-                writer.write(s);
-                writer.write("\r\n");
-
-                           
-}
-        }
-    }
-}
+      }
+ 
