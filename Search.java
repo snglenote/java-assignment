@@ -17,7 +17,7 @@ public class Search {
 
         String textInput = word;
             int index = 0;
-        String[] yourArray = {"Lorem" , "Ipsum" , "Dolor" , "Sit" , "Etiam" ,  "Amet" , "Consectetur", "Adipiscing" , "Elit" , "Integer",  "Auctor", "Purus", "Nec" , "Congue", "Dolor" , "Tellus" , "Scelerisque" , "Mongo", "Nam", "Diam"};
+        String[] yourArray = {"Father" , "Head" , "Stand" , "Own" , "Page" ,  "Should" , "Country", "Found" , "Answer" , "School",  "Grow", "Study", "Still" , "Learn", "Plant" , "Cover" , "Food" , "Sun", "Four", "Between"};
 
         for (int i = 0; i <= yourArray.length - 1; i++) {
 
