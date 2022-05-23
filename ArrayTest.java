@@ -14,7 +14,7 @@ public class ArrayTest {
         List<String> random20WordsList = wordsList.subList(0, 20);
         System.out.printf("random20WordsList = %s%n", random20WordsList);
         String[] random20WordsArray = random20WordsList.toArray(new String[20]);
-        System.out.printf("random20WordsArray = %s%n", Arrays.toString(random20WordsArray));
+        System.out.printf("\r\nrandom20WordsArray = %s%n", Arrays.toString(random20WordsArray));
     }
   
  }
